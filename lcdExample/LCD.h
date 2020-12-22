@@ -18,9 +18,16 @@
 
 //Liquid Crystal init function
 void LCD_Init();
+
+//Function to send 4 bits
 void LCD_send4bits(uint8_t cmd, uint8_t mode);
+
+//function to send commands
 void LCD_sendCmd(uint8_t cmd);
+
+//function to send data
 void LCD_sendData(uint8_t data);
+
 void LCD_clear();
 void LCD_home();
 void LCD_setCursor(uint8_t col, uint8_t row);
